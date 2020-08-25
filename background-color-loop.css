@@ -1,0 +1,37 @@
+.rainbow {
+    width: 200px;
+    height: 200px; 
+    /* Chrome */
+    animation: colorchange 45; /* animation-name followed by duration in seconds*/ /* you could also use milliseconds (ms) or something like 2.5s */ 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
+    animation-play-state: running;
+
+    /* Safari */
+    -webkit-animation: colorchange 45s;
+    -webkit-animation-timing-function: ease-in-out; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-play-state: running; 
+}
+
+@keyframes colorchange { 
+    0% { background: #ff0000; } 
+    14% { background: #ffa500; } 
+    28% { background: #ffff00; } 
+    42% { background: #008000; } 
+    56% { background: #0000ff; }
+    70% { background: #4b0082; } 
+    84% { background: #ee82ee; } 
+    100% { background: #ff0000; }
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */ { 
+    0% { background: #ff0000; } 
+    14% { background: #ffa500; } 
+    28% { background: #ffff00; } 
+    42% { background: #008000; } 
+    56% { background: #0000ff; }
+    70% { background: #4b0082; } 
+    84% { background: #ee82ee; } 
+    100% { background: #ff0000; }
+}
